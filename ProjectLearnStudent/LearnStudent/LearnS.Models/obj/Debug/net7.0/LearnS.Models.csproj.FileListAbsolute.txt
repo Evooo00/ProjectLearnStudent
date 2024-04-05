@@ -1,0 +1,73 @@
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Models\bin\Debug\net7.0\LearnS.Models.deps.json
+C:\Users\barte\Desktop\Projekt\LearnS.Models\bin\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Models\bin\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\refint\LearnS.Models.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\Projekt\LearnS.Models\obj\Debug\net7.0\ref\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Debug\net7.0\LearnS.Models.sourcelink.json

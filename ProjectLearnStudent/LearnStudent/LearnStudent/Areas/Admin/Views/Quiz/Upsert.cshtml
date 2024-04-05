@@ -1,0 +1,127 @@
+﻿@model QuizVM
+<h2 style="margin-top: 50px">Utwórz Quiz</h2>
+
+<form asp-action="Upsert" method="post">
+    <input asp-for="Quiz.Id" hidden />
+    <div class="form-group">
+        <label asp-for="Quiz.Title" class="control-label"></label>
+        <input asp-for="Quiz.Title" class="form-control" />
+        <span asp-validation-for="Quiz.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quiz.Points" class="control-label">Liczba punktów</label>
+        <input asp-for="Quiz.Points" class="form-control" />
+        <span asp-validation-for="Quiz.Points" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quiz.Coins" class="control-label">Liczba monet</label>
+        <input asp-for="Quiz.Coins" class="form-control" />
+        <span asp-validation-for="Quiz.Coins" class="text-danger"></span>
+    </div>
+
+    <div class="form-floating py-2 col-12">
+        <select asp-for="Quiz.SectionId" asp-items="@Model.SectionList" class="form-select border-0 shadow">
+            <option disabled selected>---Wybierz Dział---</option>
+        </select>
+        <label asp-for="Quiz.SectionId" class="ms-2"></label>
+        <span asp-validation-for="Quiz.SectionId" class="text-danger"></span>
+    </div>
+
+    <div id="questionsContainer">
+        @for (var questionCounter = 0; questionCounter < Model.Questions.Count; questionCounter++)
+        {
+            <div class="question-container">
+                <h4>Pytanie @questionCounter</h4>
+
+                <div class="form-group">
+                    <label asp-for="Questions[questionCounter].QuestionText" class="control-label">Treść Pytania</label>
+                    <input style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].QuestionText" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Odpowiedzi</label>
+                    <input style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].Answer1" class="form-control" />
+                    <input style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].Answer2" class="form-control" />
+                    <input style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].Answer3" class="form-control" />
+                    <input style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].Answer4" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Questions[questionCounter].IsCorrect" class="control-label">Poprawna Odpowiedź</label>
+                    <select style="margin: 5px 0 5px 0" asp-for="Questions[questionCounter].IsCorrect" class="form-select">
+                        <option value="1">Odpowiedź 1</option>
+                        <option value="2">Odpowiedź 2</option>
+                        <option value="3">Odpowiedź 3</option>
+                        <option value="4">Odpowiedź 4</option>
+                    </select>
+                </div>
+            </div>
+        }
+    </div>
+
+    <button type="button" id="addQuestionBtn" class="btn btn-success">Dodaj Pytanie</button>
+
+    <div class="row pt-2">
+        <div class="row pt-2">
+            <div class="col-6 col-md-3">
+                @if (Model.Quiz.Id != 0)
+                {
+                    <button type="submit" class="btn btn-primary form-control">Zaktualizuj</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-primary form-control">Utwórz</button>
+                }
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Quiz" asp-action="Index" class="btn btn-secondary border form-control">Wróć do Listy</a>
+            </div>
+        </div>
+</form>
+
+@section Scripts {
+    <script>
+        var questionCounter = @Model.Questions.Count;
+
+        $("#addQuestionBtn").click(function () {
+            var questionHtml = '<div class="question-container">';
+            questionHtml += '<h4>Pytanie ' + (questionCounter + 1) + '</h4>';
+            questionHtml += '<div class="form-group">';
+            questionHtml += '<label>Treść Pytania</label>';
+            questionHtml += '<input type="text" name="Questions[' + questionCounter + '].QuestionText" class="form-control" />';
+            questionHtml += '</div';
+
+            questionHtml += '<div class="form-group">';
+            questionHtml += '<label>Odpowiedzi</label>';
+            questionHtml += '<input type="text" name="Questions[' + questionCounter + '].Answer1" class="form-control" />';
+            questionHtml += '<input type="text" name="Questions[' + questionCounter + '].Answer2" class="form-control" />';
+            questionHtml += '<input type="text" name="Questions[' + questionCounter + '].Answer3" class="form-control" />';
+            questionHtml += '<input type="text" name="Questions[' + questionCounter + '].Answer4" class="form-control" />';
+            questionHtml += '</div>';
+
+            questionHtml += '<div class="form-group">';
+            questionHtml += '<label>Poprawna Odpowiedź</label>';
+            questionHtml += '<select name="Questions[' + questionCounter + '].IsCorrect" class="form-control">';
+            questionHtml += '<option value="1">Odpowiedź 1</option>';
+            questionHtml += '<option value="2">Odpowiedź 2</option>';
+            questionHtml += '<option value="3">Odpowiedź 3</option>';
+            questionHtml += '<option value="4">Odpowiedź 4</option>';
+            questionHtml += '</select>';
+            questionHtml += '</div>';
+
+            questionHtml += '</div>';
+
+            $("#questionsContainer").append(questionHtml);
+            questionCounter++;
+        });
+
+        function GetAnswerOptions() {
+            var options = [];
+            for (var i = 1; i <= 4; i++) {
+                options.push({ text: i.toString(), value: i.toString() });
+            }
+            return options;
+        }
+
+    </script>
+}

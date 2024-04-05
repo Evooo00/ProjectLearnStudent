@@ -1,0 +1,47 @@
+﻿@model List<LearnS.Models.ForumThread>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/Forum.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Questions</title>
+</head>
+<body>
+    <h2>Tematy na forum</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="hidden-column">Głosy, Odpowiedzi, Wyświetlenia</th>
+                <th class="hidden-column">Tytuł</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forumThread in Model)
+            {
+                <tr>
+                    <td>
+                        Głosy: @{
+                            var totalRatings = forumThread.ForumPosts?.Sum(fp => fp.ForumRatings?.Sum(fr => fr.Value) ?? 0) ?? 0;
+                            @totalRatings
+                        }
+                        <br />
+                        Odpowiedzi: <span class="replaycount">@forumThread.ReplyCount</span>
+                        <br />
+                        Wyświetlenia: <span class="number-of-views">@forumThread.NumberOfViews</span>
+                    </td>
+                    <td>
+                        <a asp-area="User" asp-controller="Forum" asp-action="ViewThread" asp-route-id="@forumThread.Id">@forumThread.Title</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+   
+        <a class="btn btn-primary float-right" asp-area="User" asp-controller="Forum" asp-action="AskQuestion">Zadaj Pytanie</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/LearnStudent.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Table.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/AdminPanel.css" />
+    
+        <script>
+        function codeAddress() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.classList.add("close");
+            sidebar.classList.add("close", "hoverable");
+        }
+        window.onload = codeAddress;
+    </script>
+
+    
+    
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <img src="/images/Logo/Logo2.png" alt="">LearnStudent
+        </div>
+
+        <div class="search_bar">
+            <input type="text" placeholder="Wyszukaj..." />
+        </div>
+
+        <div class="navbar_content">
+            <i class="bi bi-grid"></i>
+            <i class='bx bx-sun' id="darkLight"></i>
+            <i class='bx bx-bell'></i>
+            <img src="/images/Avatars/Avatar1.png" alt="" class="profile" />
+        </div>
+        
+    </nav>
+
+    <!-- sidebar -->
+    <nav style="position: absolute" class="sidebar">
+        <div class="menu_content">
+            <ul class="menu_items">
+                <div class="menu_title menu_dahsboard"></div>
+
+                <!-- start -->
+                <li  class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-home-alt"></i>
+                        </span>
+                        <span class="navlink">
+                            <a style="color: inherit; text-decoration: inherit"
+                               asp-area="User" asp-controller="Home" asp-action="Index">Strona Główna</a>
+                        </span>
+                        
+                    </div>
+
+                    
+                </li>
+                <!-- end -->
+                <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                <!-- start -->
+                
+                <!-- end -->
+            </ul>
+
+            <ul class="menu_items">
+                <div class="menu_title menu_editor"></div>
+                <!-- duplicate these li tag if you want to add or remove navlink only -->
+                <!-- Start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-grid-alt"></i>
+                        </span>
+                        <span class="navlink">Zawartość</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="UsersAccount" asp-action="Index">Użytkownicy</a>
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="Category" asp-action="Index">Kategorie</a>
+
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="Section" asp-action="Index">Dział</a>
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="Avatars" asp-action="Index">Avatary</a>
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="LearningMaterials" asp-action="Index">Materiały do nauki</a>
+                        <a class="nav_link sublink" asp-area="Admin" asp-controller="ExampleTask" asp-action="Index">Przykładowe Zadania</a>
+                    </ul>
+                </li>
+                <div href="#" class="nav_link submenu_item">
+                    <span class="navlink_icon">
+                        <i class="bi bi-question-diamond-fill"></i>
+                    </span>
+                    <span class="navlink">Quiz</span>
+                    <i class="bx bx-chevron-right arrow-left"></i>
+                </div>
+                <ul class="menu_items submenu">
+                    <a class="nav_link sublink" asp-area="Admin" asp-controller="Quiz" asp-action="Index">Stwórz Quiz</a>
+
+                                  
+                </ul>
+                
+                
+                
+            </ul>
+           
+
+            <!-- Sidebar Open / Close -->
+            <div  class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span> Rozwiń</span>
+                    <i class='bx bx-log-in'></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span> Zwiń</span>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main  class="page-content">
+        <div style="max-width: 8000px" class="container-fluid">
+         @RenderBody()
+            <partial name="_Notification" />
+
+           
+         </div>
+    </main>
+  
+
+
+    <!-- JavaScript -->
+    <script src="~/js/AdminPanel.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="https://cdn.tiny.cloud/1/73aiauzwcdykvenqcz6q151jcv8ex8gf50prwlxanpr5wff7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

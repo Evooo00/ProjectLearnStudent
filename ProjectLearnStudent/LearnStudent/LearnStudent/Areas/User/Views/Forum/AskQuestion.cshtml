@@ -1,0 +1,29 @@
+﻿
+@model ForumVM
+
+<h2>Zadaj Pytanie</h2>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form asp-area="User" asp-controller="Forum" asp-action="AskQuestion" method="post">
+        <input type="hidden" asp-for="ForumThread.Id" />
+        <div class="form-group">
+            <label asp-for="ForumThread.Title" class="control-label"></label>
+            <input asp-for="ForumThread.Title" class="form-control" />
+            <span asp-validation-for="ForumThread.Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ForumThread.Content" class="control-label"></label>
+            <textarea asp-for="ForumThread.Content" class="form-control"></textarea>
+            <span asp-validation-for="ForumThread.Content" class="text-danger"></span>
+        </div>
+        <input asp-for="ForumThread.CreatedAt" type="hidden" />
+        <input asp-for="ForumThread.User.UserName" type="hidden" />
+        <button type="submit" class="btn btn-primary">Zadaj pytanie</button>
+    </form>
+}
+else
+{
+    <p>Musisz być zalogowany, aby zadać pytanie.</p>
+}

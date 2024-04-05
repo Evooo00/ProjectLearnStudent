@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ExampleTasks>
+
+<div class="container">
+    <div class="row">
+        @foreach (var exampletasks in Model)
+        {
+            <div class="col-12 mb-4">
+                <h2 class="card-title h3 text-dark text-uppercase">@exampletasks.Title</h2>
+                <div class="mb-2">
+                    @Html.Raw(exampletasks.ExampleTask)
+                </div>
+                <div class="mb-4">
+                    @Html.Raw(exampletasks.Solution)
+                </div>
+            </div>
+        }
+    </div>
+</div>

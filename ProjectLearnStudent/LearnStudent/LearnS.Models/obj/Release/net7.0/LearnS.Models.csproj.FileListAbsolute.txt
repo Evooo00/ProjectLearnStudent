@@ -1,0 +1,12 @@
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Release\net7.0\LearnS.Models.deps.json
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Release\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\bin\Release\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.AssemblyInfo.cs
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\refint\LearnS.Models.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\LearnS.Models.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Models\obj\Release\net7.0\ref\LearnS.Models.dll

@@ -1,0 +1,145 @@
+﻿@using System.Security.Claims
+@model LearnS.Models.ForumThread
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/Forum.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Title</title>
+</head>
+<body>
+
+     
+  
+  
+    <div style=" "> 
+    <h1>@Model.Title</h1>
+    <p style="opacity: 0.5">Dodano: @Model.CreatedAt</p>
+    <hr />
+    
+    <p>@Model.Content</p>
+    <hr />
+        <div class="vote-buttons">
+            <form asp-area="User" asp-controller="Forum" asp-action="AddRating" method="post" class="vote-form">
+                <input type="hidden" name="postId" value="@Model.Id" />
+                <input type="hidden" name="rating" value="1" />
+                <button type="submit" class="vote-button">🔼</button>
+            </form>
+
+            <span class="vote-count">@Model.ForumPosts?.Sum(fp => fp.ForumRatings?.Sum(fr => fr.Value) ?? 0)</span>
+
+            <form asp-area="User" asp-controller="Forum" asp-action="AddRating" method="post" class="vote-form">
+                <input type="hidden" name="postId" value="@Model.Id" />
+                <input type="hidden" name="rating" value="-1" />
+                <button type="submit" class="vote-button">🔽</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="forum-replies">
+        
+        @if (Model.ForumPosts != null && Model.ForumPosts.Any())
+        {
+            foreach (var reply in Model.ForumPosts)
+            {
+                <div  class="forum-reply">
+                    <h3>User: @reply.User?.UserName</h3>
+                    <p style="opacity: 0.5">Added: @reply.CreatedAt</p>
+                    <hr>
+                    <p>@reply.Content</p>
+                    <hr>
+
+                    
+                    
+
+                 
+                    <p>Użytkownik: @reply.User?.UserName</p>
+
+
+                    <form asp-area="User" asp-controller="Forum" asp-action="DeleteReply" method="post">
+                        <input type="hidden" name="replyId" value="@reply.Id" />
+                        <button type="submit">Usuń odpowiedź</button>
+                    </form>
+                    
+
+                    <form asp-area="User" asp-controller="Forum" asp-action="AddComment" method="post">
+                        <input type="hidden" name="replyId" value="@reply.Id" />
+                        <div >
+                            <label for="commentContent">Treść komentarza:</label>
+                            <textarea id="commentContent" name="commentContent" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Dodaj komentarz</button>
+                        </div>
+                    </form>
+
+                    @if (reply.ForumComments != null && reply.ForumComments.Any())
+                    {
+                        <div class="forum-comments">
+                            
+                            @foreach (var comment in reply.ForumComments)
+                            {
+                                <div style="margin: 20px 0 20px 40px" class="forum-comment">
+                                    <h4>User 2 comment @comment.User?.UserName</h4>
+                                    <p style="opacity: 0.5">Added: @comment.CreatedAt</p>
+                                    <hr >
+                                    <p>@comment.Content</p>
+                                    <hr> 
+                                    
+                                    
+
+                                    <form asp-area="User" asp-controller="Forum" asp-action="DeleteComment" method="post">
+                                        <input type="hidden" name="commentId" value="@comment.Id" />
+                                        <button type="submit">Usuń komentarz</button>
+                                    </form>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Brak komentarzy.</p>
+                    }
+                </div>
+            }
+        }
+        else
+        {
+            <p>Brak odpowiedzi.</p>
+        }
+    </div>
+    <div style="margin: 0 0 30px 0" class="add-reply">
+        <h3>Dodaj odpowiedź</h3>
+        <form asp-area="User" asp-controller="Forum" asp-action="AddReply" method="post">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <div>
+                <label for="replyContent">Treść odpowiedzi:</label>
+                <textarea id="replyContent" name="replyContent" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Dodaj odpowiedź</button>
+            </div>
+        </form>
+    </div>
+    <form asp-area="User" asp-controller="Forum" asp-action="DeleteThread" method="post">
+     
+
+        <input type="hidden" name="threadId" value="@Model.Id" />
+
+        @if (User.Identity.IsAuthenticated && Model.User?.Id == User.FindFirstValue(ClaimTypes.NameIdentifier))
+        {
+            <button type="submit">Usuń cały wątek</button>
+        }
+    </form>
+
+    <div class="back-to-list">
+        <a asp-area="User" asp-controller="Forum" asp-action="Index">Powrót do listy wątków</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

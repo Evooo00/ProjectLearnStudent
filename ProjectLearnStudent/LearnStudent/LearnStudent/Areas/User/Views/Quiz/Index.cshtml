@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Quiz>
+
+<div class="container">
+    <div class="row">
+        <form method="post" action="@Url.Action("CheckAnswers", "Quiz", new { area = "User", section = ViewBag.Section })">
+
+
+            @foreach (var quiz in Model)
+            {
+               
+                    <div class="col-12 mb-4">
+                        <h2 class="card-title h3 text-dark text-uppercase">@quiz.Title</h2>
+
+                        @foreach (var question in quiz.Questions)
+                        {
+                            var sectionTitle = quiz.Section.Title;
+                            <div>
+                                <p>@question.QuestionText</p>
+
+                                <div class="form-check">
+                                    <input type="radio" id="answer1-@question.Id" name="question-@question.Id" value="1" class="form-check-input" />
+                                    <label class="form-check-label" for="answer1-@question.Id">@Html.Raw(question.Answer1)</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" id="answer2-@question.Id" name="question-@question.Id" value="2" class="form-check-input" />
+                                    <label class="form-check-label" for="answer2-@question.Id">@Html.Raw(question.Answer2)</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" id="answer3-@question.Id" name="question-@question.Id" value="3" class="form-check-input" />
+                                    <label class="form-check-label" for="answer3-@question.Id">@Html.Raw(question.Answer3)</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" id="answer4-@question.Id" name="question-@question.Id" value="4" class="form-check-input" />
+                                    <label class="form-check-label" for="answer4-@question.Id">@Html.Raw(question.Answer4)</label>
+                                </div>
+                            </div>
+                        }
+                        
+                        
+                    </div>
+            }
+
+           
+               
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Sprawdź</button>
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,206 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LearnStudent</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/LearnStudent.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Table.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <div id="openButton">
+                    <button style="background-color: initial; color: white; border: solid 1px white; border-radius: 5px; margin: 0 20px 0 0" class="openbtn" onclick="openNav()">☰</button>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LearnStudent</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <div>
+                    </div>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                    <partial name="_LoginPartial" />
+                    }
+
+                </div>
+
+                <div class="avatarAndProfileTabs">
+
+                    @{
+                        string avatarPath = "/images/avatars/defaultavatar.jpg";
+                    }
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="userAvatar" onclick="showTabs()">
+                            <img src="@avatarPath" alt="Avatar" width="45px" height="45px">
+                        </div>
+                    }
+
+
+
+
+                    <div style="margin-top: 5px" class="profileTabs" id="profileTabs">
+
+                        <p>
+
+                            <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index">
+                                Profil
+                            </a>
+                        </p>
+                        <p>
+                            <form class="nav-link" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                <button type="submit" class="nav-link btn btn-link text-white">Wyloguj</button>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <div id="mySidebar" class="sidebarLayout">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+        <a class="nav-link" asp-area="User" asp-controller="Home" asp-action="Index">Home</a>
+        <a class="nav-link" asp-area="User" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="nav-link" asp-area="User" asp-controller="AvatarShop" asp-action="Index">Sklep Avatarów</a>
+            <a class="nav-link" asp-area="User" asp-controller="Forum" asp-action="Index">Forum</a>
+           
+            <div class="dropdown">
+                <button class="dropdown-btn mainCategory">Matematyka<i class="arrow"></i></button>
+
+                <div class="dropdown-content">
+                    <button class="mainCategory dropdown-btn">Statystyka  <i class="arrow"></i></button>
+
+                    <div class="dropdown-content">
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Statystyka 1<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadLearningMaterials('Statystyka')">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadExampleTasks('Statystyka')">Zadania</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Statystyka')">Test</a>
+
+                        </div>
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Statystyka 2<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadLearningMaterials('Statystyka')">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Statystyka')">Test</a>
+                        </div>
+                    </div>
+
+                    <button class="mainCategory dropdown-btn">Logika  <i class="arrow"></i></button>
+                    <div class="dropdown-content">
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Logika 1<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadLearningMaterials('Logika')">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Logika')">Test</a>
+                        </div>
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Logika 2<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadLearningMaterials('Logika')">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Logika')">Test</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn mainCategory">Informatyka<i class="arrow"></i></button>
+
+                <div class="dropdown-content">
+                    <button class="mainCategory dropdown-btn">Statystyka  <i class="arrow"></i></button>
+
+                    <div class="dropdown-content">
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Statystyka 1<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" asp-area="User" asp-controller="LearningMaterials" asp-action="Index">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Statystyka')">Test</a>
+                        </div>
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Statystyka 2<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="#">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="#">Test</a>
+                        </div>
+                    </div>
+
+                    <button class="mainCategory dropdown-btn">Logika  <i class="arrow"></i></button>
+                    <div class="dropdown-content">
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Logika 1<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="#">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="javascript:void(0);" onclick="loadQuizzes('Logika')">Test</a>
+                        </div>
+
+                        <button style="font-size: 20px" class="dropdown-btn secondCategory">Logika 2<i class="arrow"></i></button>
+                        <div class="dropdown-content">
+                            <a style="font-size: 16px" class="levels" href="#">Materiały do nauki</a>
+                            <a style="font-size: 16px" class="levels" href="#">Test</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+      
+
+        @if (User.IsInRole("Admin"))
+        {
+            <a class="nav-link" asp-area="Admin" asp-controller="AdminPanel" asp-action="Index">Panel administratora</a>
+        }
+ 
+
+
+
+
+        
+        
+
+        
+
+    </div>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer bg-primary text-center text-white">
+        <div class="container">
+            Made by Bartłomiej Kowalczyk and Michał Knieć
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="https://cdn.tiny.cloud/1/73aiauzwcdykvenqcz6q151jcv8ex8gf50prwlxanpr5wff7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>

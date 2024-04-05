@@ -1,0 +1,13 @@
+﻿@model IEnumerable<LearningMaterials>
+
+<div class="container">
+    <div class="row">
+        @foreach (var learningmaterials in Model)
+        {
+            <div class="col-12 mb-4">
+                <h2 class="card-title h3 text-dark text-uppercase">@learningmaterials.Title</h2>
+                @Html.Raw(learningmaterials.Description)
+            </div>
+        }
+    </div>
+</div>

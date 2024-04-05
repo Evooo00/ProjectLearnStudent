@@ -1,0 +1,73 @@
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Source\Repos\Bartek045\LearnStudent\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\gaben\OneDrive\Pulpit\Nowy folder\LearnStudent\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\gaben\OneDrive\Pulpit\learnstudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.deps.json
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\bin\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.AssemblyReference.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfoInputs.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.AssemblyInfo.cs
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\refint\LearnS.Utility.dll
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.pdb
+C:\Users\barte\Desktop\Projekt\LearnS.Utility\obj\Debug\net7.0\ref\LearnS.Utility.dll
+C:\Users\barte\Desktop\LearnStudent\LearnStudent\LearnS.Utility\obj\Debug\net7.0\LearnS.Utility.sourcelink.json

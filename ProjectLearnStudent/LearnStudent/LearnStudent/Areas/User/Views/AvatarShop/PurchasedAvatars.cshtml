@@ -1,0 +1,42 @@
+﻿@model List<AvatarPurchase>
+
+<head>
+    <meta charset="utf-8" />
+    
+</head>
+
+<div class="row">
+    @foreach (var avatarPurchase in Model)
+    {
+        <div class="col-md-4">
+            <div class="avatar-container">
+                @if (avatarPurchase.Avatar != null)
+                {
+                    <img src="@avatarPurchase.Avatar.ImageUrl" class="avatar-image" alt="@avatarPurchase.Avatar.Name" />
+                }
+                else
+                {
+                    <p>Brak dostępnego obrazu avatara.</p>
+                }
+            </div>
+            <div>
+                <strong>Nazwa: </strong>@avatarPurchase.Avatar?.Name
+            </div>
+            <div>
+                <strong>Wartość monet: </strong>@avatarPurchase.Avatar?.CoinsValue
+            </div>
+            <div>
+                <p>Data zakupu: @avatarPurchase.PurchaseDate</p>
+            </div>
+
+            @if (avatarPurchase.Avatar != null)
+            {
+                <p>Debug: AvatarId: @avatarPurchase.AvatarId, AvatarName: @avatarPurchase.Avatar.Name, AvatarImageUrl: @avatarPurchase.Avatar.ImageUrl</p>
+            }
+            else
+            {
+                <p>Debug: Brak przypisanego avatara.</p>
+            }
+        </div>
+    }
+</div>

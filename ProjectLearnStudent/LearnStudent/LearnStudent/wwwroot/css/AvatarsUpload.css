@@ -1,0 +1,10 @@
+﻿.avatar-container {
+    width: 100px; 
+    height: 100px; 
+    margin: 10px; 
+}
+
+.avatar-image {
+    max-width: 100%; 
+    max-height: 100%; 
+}

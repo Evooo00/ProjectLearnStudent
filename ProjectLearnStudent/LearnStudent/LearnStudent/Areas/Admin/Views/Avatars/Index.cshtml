@@ -1,0 +1,62 @@
+﻿@model List<AvatarsUpload>
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/css/AvatarsUpload.css" />
+</head>
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Lista Avatarów</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-controller="Avatars" asp-action="Upsert" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i>  Dodaj nowy avatar
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var avatarsUpload in Model)
+            {
+                <div class="col-md-4">
+                    <div class="avatar-container">
+                        <img src="@avatarsUpload.ImageUrl" class="avatar-image" />
+                    </div>
+                    <div>
+                        <strong>Nazwa: </strong>@avatarsUpload.Name
+                    </div>
+                    <div>
+                        <strong>ImageUrl: </strong>
+                        <a href="@avatarsUpload.ImageUrl" target="_blank">
+                            @avatarsUpload.ImageUrl
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a asp-controller="Avatars" asp-action="Upsert" asp-route-id="@avatarsUpload.Id" class="btn btn-primary">
+                            <i class="bi bi-pencil-square"></i> Edytuj
+                        </a>
+                        <a href="#" onclick="Delete(@avatarsUpload.Id)" class="btn btn-danger">
+                            <i class="bi bi-trash-fill"></i> Usuń
+                        </a>
+
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+
+    <script src="~/js/AvatarsUpload.js"></script>
+}
+

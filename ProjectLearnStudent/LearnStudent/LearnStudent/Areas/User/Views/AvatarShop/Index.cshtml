@@ -1,0 +1,41 @@
+﻿@model List<AvatarsUpload>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AvatarsUpload.css" />
+</head>
+<div class="row">
+    @foreach (var avatarsUpload in Model)
+    {
+        <div class="col-md-4">
+            <div class="avatar-container">
+                <img src="@avatarsUpload.ImageUrl" class="avatar-image" />
+            </div>
+            <div>
+                <strong>Nazwa: </strong>@avatarsUpload.Name
+            </div>
+            <div>
+                <strong>Wartość monet: </strong>@avatarsUpload.CoinsValue
+            </div>
+            <div>
+                <p>Liczba monet do zakupu: @avatarsUpload.CoinsValue</p>
+               
+            </div>
+        </div>
+         @if (User.Identity.IsAuthenticated)
+            {
+                <form method="post" asp-action="Purchase" asp-controller="AvatarShop">
+                    <input type="hidden" name="avatarId" value="@avatarsUpload.Id" />
+                    <button type="submit" class="btn btn-success">Kup Avatar</button>
+                </form>
+            }
+            else
+            {
+                <p>Zaloguj się, aby zakupić avatara.</p>
+            }
+        
+  
+    }
+</div>
+
+
